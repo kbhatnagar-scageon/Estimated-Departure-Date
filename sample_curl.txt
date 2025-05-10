@@ -1,0 +1,11 @@
+curl -X POST \
+  http://localhost:8000/predict \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "mrn": "12345",
+  "visit_date": "2025-01-31 21:25:00",
+  "primary_diagnosis": "Pneumonia",
+  "age": 65,
+  "gender": "M",
+  "comorbidities": "Diabetes,Hypertension"
+}'
